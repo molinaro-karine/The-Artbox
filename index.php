@@ -12,15 +12,16 @@
     
     <?php include('header.php'); ?>
     <?php include('oeuvres.php'); ?>
+
     <main>
         <div id="liste-oeuvres">
         <?php foreach($oeuvres as $oeuvre) : ?>
             <article class="oeuvre">
-                <a href="oeuvre-1.php">
+                <a href="oeuvre.php?oeuvre=<?php echo $oeuvre['id']; ?>">
                     <?php echo $oeuvre['image'];?>
                     <h2><?php echo $oeuvre['title']; ?></h2>
-                    <p><?php echo $oeuvre['description']; ?></p>
-                </a>    
+                    <p class="description"><?php echo $oeuvre['description']; ?></p>
+                </a>  
             </article>
         <?php endforeach ?>
         </div>
