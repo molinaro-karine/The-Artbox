@@ -12,6 +12,7 @@
 
 <?php include('header.php'); ?>
 <?php include('oeuvres.php'); ?>
+
 <main>
 <?php foreach($oeuvres as $oeuvre) : ?>
 
@@ -30,9 +31,10 @@
                 <p><?php echo $oeuvre['description-complete']; ?></p>
             </div>
         </article>
-    </main>
+   
     <?php endif; ?>
 <?php endforeach ?>
+</main>
 <?php include('footer.php'); ?>
 </body>
 </html>
